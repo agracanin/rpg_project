@@ -28,7 +28,7 @@ public:
 	}
 
 	void takeDamage(hptype damage) {
-		if (damage > CurrentHP + ShieldHP) {
+		if (damage > CurrentHP) {
 			CurrentHP = 0;
 			return;
 		}
@@ -45,9 +45,21 @@ public:
 		CurrentHP += amount;
 	}
 
+	hp() {
+		CurrentHP = 1;
+		MaxHP = 1;
+	}
+
+	hp(hptype cHP, hptype mHP) {
+		CurrentHP = cHP;
+		MaxHP = mHP;
+		if (CurrentHP > MaxHP) {
+			CurrentHP = MaxHP;
+		}
+	}
 
 private:
-	hptype ShieldHP;
+	// hptype ShieldHP;
 	hptype CurrentHP;
 	hptype MaxHP;
 };
