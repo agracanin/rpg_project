@@ -1,6 +1,5 @@
 #pragma once
-#include "hitpointtypes.h"
-
+typedef std::uint16_t hptype;
 
 class hp {
 public:

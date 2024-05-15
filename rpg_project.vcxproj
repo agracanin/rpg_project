@@ -132,9 +132,8 @@
   <ItemGroup>
     <ClInclude Include="allclasses.h" />
     <ClInclude Include="cleric.h" />
+    <ClInclude Include="levelsystem.h" />
     <ClInclude Include="rogue.h" />
-    <ClInclude Include="stattypes.h" />
-    <ClInclude Include="hitpointtypes.h" />
     <ClInclude Include="hp.h" />
     <ClInclude Include="statblock.h" />
     <ClInclude Include="warrior.h" />
